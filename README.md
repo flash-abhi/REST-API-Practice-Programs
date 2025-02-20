@@ -19,4 +19,11 @@ ii) For "registerUser" function: JSON response with a status code of 201 indicat
 iii) For "loginUser" function: JSON response with a status code of 200 indicating success if the login is successful. The response should include a JSON object: { "status": "success", "msg": "login successful" }.
 iv) If the login attempt is unsuccessful due to invalid user details: JSON response with a status code of 400. The response should include a JSON object: { "status": "failure", "msg": "invalid user details" }.
 
-
+# Basic Authentication program
+In this problem, your task is to implement a middleware using basic authentication to permit access only to authenticated users with valid credentials, thereby ensuring data privacy and restricting unauthorized access to an endpoint.
+### Objectives:
+- Implement express-basic authentication middleware inside "src/middlewares/basicAuth.js."
+- Restrict access to the "/api/product" route.
+- Allow only authenticated users with valid credentials to access the API.
+- expected outcome:
+  is to have the "/api/product" API accessible only to users who provide valid credentials. Unauthorized users should receive an authentication error or be denied access.
