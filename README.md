@@ -27,3 +27,14 @@ In this problem, your task is to implement a middleware using basic authenticati
 - Allow only authenticated users with valid credentials to access the API.
 - expected outcome:
   is to have the "/api/product" API accessible only to users who provide valid credentials. Unauthorized users should receive an authentication error or be denied access.
+
+# JWT Authentication
+Enhance web application security by implementing JWT (JSON Web Token) authentication for a designated route. This hands-on task provides practical insights into reinforcing web applications with JWT-based authentication, a vital aspect of building secure and robust systems.
+
+### Objectives:
+- There is a route "/api/product" that needs to be secured using JWT (JSON Web Token) authentication.
+- Modify the "loginUser" controller to generate a JWT token upon successful user login.
+- Store the generated JWT token in a cookie named "jwtToken".
+- Implement the "jwtAuth" middleware to fetch and verify the "jwtToken" cookie.
+- Grant access to the "/api/product" route if the token is valid.
+- Send a response with status 401 and JSON object { success: false, msg: error } if the token is invalid or missing.
