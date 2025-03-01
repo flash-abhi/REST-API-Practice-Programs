@@ -1,0 +1,1 @@
+{"level":"info","message":"Fri Feb 28 2025 10:35:51 GMT+0530 (India Standard Time) \n req URL: /api/user/register \n reqBody: {\"name\":\"Abhi\",\"email\":\"abc@gamil.com\",\"password\":\"hello1234\"}","service":"request-logging"}
